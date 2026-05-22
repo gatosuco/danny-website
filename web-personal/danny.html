@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danny Alejandro Encalada Ruiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="hero">
+        <nav>
+            <h3>Danny Encalada</h3>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <section class="hero-content">
+            <div>
+                <span class="tag">Tecnólogo en Informática</span>
+                <h1>Danny Alejandro Encalada Ruiz</h1>
+                <p>
+                    Profesional con experiencia en soporte técnico, infraestructura,
+                    redes, telecomunicaciones, servidores, virtualización y soluciones tecnológicas.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#experiencia" class="btn primary">Ver experiencia</a>
+                    <a href="#calculadora" class="btn secondary">Calculadora</a>
+                </div>
+            </div>
+
+            <div class="profile-card">
+                <h2>Perfil TI</h2>
+                <p>Soporte técnico • Networking • Servidores • Help Desk • Seguridad Tecnológica</p>
+                <ul>
+                    <li>📍 Quito, Pichincha, Ecuador</li>
+                    <li>📞 0995727228</li>
+                    <li>✉️ danny.encalada.ruiz@gmail.com</li>
+                </ul>
+            </div>
+        </section>
+    </header>
+
+    <main>
+
+        <section class="section">
+            <h2>Formación Académica</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>Tercer Nivel</h3>
+                    <p>Tecnólogo en Informática</p>
+                    <span>Instituto Tecnológico Superior España</span>
+                </article>
+                <article class="card">
+                    <h3>Tecnológico</h3>
+                    <p>Tecnólogo en Informática</p>
+                    <span>Instituto Tecnológico Superior España</span>
+                </article>
+                <article class="card">
+                    <h3>Bachiller</h3>
+                    <p>Ciencias Informática</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="experiencia">
+            <h2>Experiencia Profesional</h2>
+
+            <div class="timeline">
+                <div class="item">
+                    <h3>Técnico TIC 1</h3>
+                    <span>Superintendencia de Competencia Económica | 2016</span>
+                    <p>Monitoreo de enlaces de datos, soporte hardware/software, administración de telefonía Avaya, redes TCP/IP, servidores y contingencias.</p>
+                </div>
+
+                <div class="item">
+                    <h3>Técnico de Soporte en Sitio</h3>
+                    <span>Grupo Bravco S.A | 2013 - 2015</span>
+                    <p>Soporte presencial, mantenimiento preventivo, networking LAN/WAN, switches, routers, patchcords, pruebas de red y manos remotas.</p>
+                </div>
+
+                <div class="item">
+                    <h3>Asistente de Infraestructura</h3>
+                    <span>Clarivel Cía. Ltda | 2013</span>
+                    <p>Soporte a usuarios, redes, telefonía, administración de servidores, virtualización, proyectos tecnológicos y antivirus.</p>
+                </div>
+
+                <div class="item">
+                    <h3>Técnico</h3>
+                    <span>Cinticomp Cía. Ltda | 2005 - 2012</span>
+                    <p>Mantenimiento preventivo y correctivo, administración de redes, bases de datos, correo, servidores, impresoras y sistemas operativos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Capacitaciones Destacadas</h2>
+            <div class="chips">
+                <span>VMware</span>
+                <span>Docker</span>
+                <span>Office 365</span>
+                <span>Avaya Aura R8</span>
+                <span>ITIL</span>
+                <span>Seguridad Tecnológica</span>
+                <span>HP BladeSystem</span>
+                <span>HP 3PAR</span>
+                <span>Data Protector</span>
+                <span>Angular JS / Spring</span>
+            </div>
+        </section>
+
+        <section class="calculator-section" id="calculadora">
+            <h2>Calculadora Básica</h2>
+
+            <div class="calculator">
+                <input type="text" id="display" readonly placeholder="0">
+
+                <div class="buttons">
+                    <button class="clear" onclick="clearDisplay()">C</button>
+                    <button onclick="deleteLast()">⌫</button>
+                    <button onclick="appendValue('/')">÷</button>
+                    <button onclick="appendValue('*')">×</button>
+
+                    <button onclick="appendValue('7')">7</button>
+                    <button onclick="appendValue('8')">8</button>
+                    <button onclick="appendValue('9')">9</button>
+                    <button onclick="appendValue('-')">−</button>
+
+                    <button onclick="appendValue('4')">4</button>
+                    <button onclick="appendValue('5')">5</button>
+                    <button onclick="appendValue('6')">6</button>
+                    <button onclick="appendValue('+')">+</button>
+
+                    <button onclick="appendValue('1')">1</button>
+                    <button onclick="appendValue('2')">2</button>
+                    <button onclick="appendValue('3')">3</button>
+                    <button class="equal" onclick="calculate()">=</button>
+
+                    <button class="zero" onclick="appendValue('0')">0</button>
+                    <button onclick="appendValue('.')">.</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contacto">
+            <h2>Contacto</h2>
+            <p><strong>Dirección:</strong> Benito Linares S 10-46 y Matías Bigo, Sector Magdalena</p>
+            <p><strong>Teléfono:</strong> 0995727228</p>
+            <p><strong>Correo:</strong> danny.encalada.ruiz@gmail.com</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 Danny Alejandro Encalada Ruiz | Página profesional</p>
+    </footer>
+
+</body>
+</html>
